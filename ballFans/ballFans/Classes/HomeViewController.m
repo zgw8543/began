@@ -9,14 +9,11 @@
 #import "HomeViewController.h"
 #import "HomeTableViewController.h"
 #import "MatchTableViewController.h"
-#import "DataTableViewController.h"
+#import "DataViewController.h"
 #import "MineTableViewController.h"
-
-
-
-
-
 @interface HomeViewController ()
+
+
 
 @end
 
@@ -24,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     
     // 创建首页控制器
     HomeTableViewController *homeTableVc = [[HomeTableViewController alloc] init];
@@ -35,14 +32,17 @@
     [self addChildVc:matchTableVc Title:@"比赛" image:@"game_normal-1"  selectedImage:@"game_press"];
     
     // 创建数据控制器
-    DataTableViewController *dataTableVc = [DataTableViewController new];
-    [self addChildVc:dataTableVc Title:@"数据" image:@"date_normal" selectedImage:@"date_press"];
+    DataViewController *dataVC = [DataViewController new];
+    [self addChildVc:dataVC Title:@"数据" image:@"date_normal" selectedImage:@"date_press"];
     
     // 创建我的控制器
     MineTableViewController *mineTableVc = [MineTableViewController new];
     [self addChildVc:mineTableVc Title:@"我的" image:@"circle_normal"  selectedImage:@"circle_press"];
-    
 
+
+    // 设置导航与标题栏不透明
+    self.navigationController.navigationBar.translucent = NO;
+    self.tabBar.translucent = NO;
 }
 
 #pragma mark -

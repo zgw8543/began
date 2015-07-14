@@ -1,18 +1,18 @@
 //
-//  DataTableViewController.m
+//  DataSerieAController.m
 //  ballFans
 //
-//  Created by lanou3g on 15/7/9.
+//  Created by lanou3g on 15/7/10.
 //  Copyright (c) 2015年 张吴凃. All rights reserved.
 //
 
-#import "DataTableViewController.h"
+#import "DataSerieAController.h"
 
-@interface DataTableViewController ()
+@interface DataSerieAController ()
 
 @end
 
-@implementation DataTableViewController
+@implementation DataSerieAController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -96,5 +96,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end

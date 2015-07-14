@@ -9,5 +9,6 @@
 #ifndef ballFans_Header_h
 #define ballFans_Header_h
 
+#import "UIImageView+WebCache.h"
 
 #endif

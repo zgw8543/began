@@ -24,11 +24,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    
-    
-    
     // 设置根视图控制器
-    self.window. rootViewController = [[HomeViewController alloc] init];
+    self.window.rootViewController = [[HomeViewController alloc] init];
     
     
     return YES;

@@ -1,5 +1,5 @@
 //
-//  DataTableView.h
+//  DataTableViewController.h
 //  ballFans
 //
 //  Created by lanou3g on 15/7/9.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DataTableView : UITableView
+@interface DataTableViewController : UITableViewController
 
 @end
